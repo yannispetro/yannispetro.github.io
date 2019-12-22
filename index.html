@@ -330,6 +330,7 @@
       </div>
       <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 ">
           <h4>Compressed sensing and wavelet bases for multidimensional function approximation</h4>
+          <h4><small>With Ioannis Kougioumtzoglou and Apostolos Psaros</small><br></h4>
         <p style="text-align:justify;">
            This is
           [<a target="_blank" href="https://drive.google.com/open?id=1Q0xlF2VNSs6NVh8FSPA0nydCw3x_e6Nb">demo</a>] [<a target="_blank" href="https://ismir2017.smcnus.org/wp-content/uploads/2017/10/135_Paper.pdf">paper</a>]        
@@ -348,6 +349,7 @@
       </div>
       <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 ">
           <h4>Wiener path integral techniques for efficient stochastic analysis of nonlinear dynamical systems</h4>
+          <h4><small>With Ioannis Kougioumtzoglou</small><br></h4>
         <p style="text-align:justify;">
            This is
           [<a target="_blank" href="https://drive.google.com/open?id=1Q0xlF2VNSs6NVh8FSPA0nydCw3x_e6Nb">demo</a>] [<a target="_blank" href="https://ismir2017.smcnus.org/wp-content/uploads/2017/10/135_Paper.pdf">paper</a>]        
@@ -366,8 +368,12 @@
       </div>
       <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 ">
           <h4>Design optimization of electromechanical energy harvesters</h4>
+          <h4><small>With Ioannis Kougioumtzoglou and Apostolos Psaros</small><br></h4>
         <p style="text-align:justify;">
-           This is
+           We determine optimal harvester designs that maximize the energy output under stochastic excitation. 
+            For that purpose, we exploit the efficiency capabilities of the Wiener path integral technique in determining the stochastic response of nonlinear dynamical systems.
+            The optimization is performed using a grid search algorithm in Matlab.
+        </p>
           [<a target="_blank" href="https://drive.google.com/open?id=1Q0xlF2VNSs6NVh8FSPA0nydCw3x_e6Nb">demo</a>] [<a target="_blank" href="https://ismir2017.smcnus.org/wp-content/uploads/2017/10/135_Paper.pdf">paper</a>]        
       </div>
     </div>
@@ -387,9 +393,9 @@
         <p style="text-align:justify;">
            This is a desktop application that performs shape optimization of truss structures by minimizing either the total mass or the external work.
             It has the capability of enforcing constraints on total mass, external work, maximum internal stress and values of the eigenfrequencies.
-            It features a nice graphical user interface (GUI) that provides the possibility to design the structure and set up the optimization problem very easily. 
+            It features a nice graphical user interface (GUI) for designing the structure, setting-up the optimization problem very easily and displaying the results. 
             The structural analysis is based on the DSFrame2D and the optimization of the nonconvex objective function is performed using the <a target="_blank" href="https://en.wikipedia.org/wiki/Differential_evolution">Differential Evolution</a> algorithm.
-            The program is written in FORTRAN90 and the GUI in Python.
+            The program is developed in FORTRAN90 and the GUI in Python.
         </p>
             [<a target="_blank" href="https://github.com/yannispetro/StructuralForms">code</a>]      
         </div>
@@ -414,7 +420,7 @@
             The standard time-reversal is a two step approach. 
             In the forward step, a source emits a signal and an array of a small number of receivers records the scattered response. 
             In the backward step, the recordings are time reversed and re-emitted into the medium at the receivers locations, and they gradually refocus on scatteres at unknown locations. 
-            We reproduce this process in the frequency domain with the aid of the Green's function and apply it in acoustic and elastic bounded media.
+            We reproduce this process in the frequency domain with the aid of the Green's function and apply it in acoustic and elastic bounded media using Matlab and Python.
             Moreover, we achieved separation of multiple scatterers by employing an SVD on a matrix containing the recordings.
         </p>
           [<a target="_blank" href="pdf/papers/2017_Petromichelakis_JWM.pdf">paper1</a>] [<a target="_blank" href="pdf/papers/2015_Panagiotopoulos_COMPDYN.pdf">paper2</a>] [<a target="_blank" href="pdf/papers/2015_Tsogka_GRACM.pdf">paper3</a>] [<a target="_blank" href="pdf/papers/2017_Panagiotopoulos_DeGrie.pdf">paper4</a>] [<a target="_blank" href="pdf/presentations/PanaPetroTso_COMPDYN 2015_Slides.pdf">presentation1</a>] [<a target="_blank" href="pdf/presentations/PanaPetroTso_GRACM_2015_Slides.pdf">presentation2</a>] [<a target="_blank" href="pdf/presentations/PanaPetroTso_HSTAM_2016_Slides.pdf">presentation3</a>]
@@ -436,9 +442,9 @@
           <h4>DSFrame2D: structural analysis of frame structures</h4>
         <p style="text-align:justify;">
            This is a desktop application for analysing 2D frame structures and calculating mode shapes. 
-            It features a nice graphical user interface (GUI) that provides the possibility to design the structure and asign parameters very easily. 
+            It features a nice graphical user interface (GUI) for designing the structure, asigning parameters and displaying the results. 
             It calculates reaction forces, diagrams of axial and shear forces, diagrams of bending moment, as well as, mode shapes of the structure using various numerical methods. 
-            The program is written in FORTRAN90 and the GUI in Python. 
+            The program is developed in FORTRAN90 and the GUI in Python. 
             At the moment an installer is available for 64bit version for windows (3,602 download from 132 countries).
         </p>
           [<a target="_blank" href="https://github.com/yannispetro/DSFrame2D">code</a>] [<a target="_blank" href="https://sourceforge.net/projects/dsframe2d/">download</a>]        
@@ -462,7 +468,7 @@
            This is my master thesis project. 
             The goal was to assess the risk for severe injury during vehicle impacts against traffic road signs supporting structures considering polymorphic uncertainty. 
             A detailed Finite-Element (FE) model of the car, the dummy and the structure was developed and various impact scenarios where analysed using the comersial software LS-DYNA. 
-            These results were employed for training a neural network and constructing a response surface which was utilized for a Fuzzy-Stochastic analysis and risk assessment.
+            These results were employed for training a neural network and constructing a response surface which was utilized for a Fuzzy-Stochastic analysis and risk assessment using Python and FORTRAN90.
         </p>
           [<a target="_blank" href="pdf/papers/Numerical evaluation of supporting structures for traffic road signs under consideration of passive safety requirements according to EN 12767.pdf">thesis</a>] [<a target="_blank" href="pdf/presentations/PRESENTATION.pptx">presentation</a>]        
       </div>
