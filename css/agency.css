@@ -969,8 +969,6 @@ body {
 
 .overlaycontainer:hover .overlay {
   opacity: 1;
-  position: absolute;
-  background-color: #008CBA;
 
 }
 
