@@ -67,7 +67,7 @@ h4 {
 }
 
 .img-centered {
-    margin: auto auto;
+    margin: -100 auto;
 }
 
 .bg-light-gray {
