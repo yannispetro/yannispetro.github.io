@@ -47,7 +47,7 @@ a.active {
     color: #3939ac;
 }
 
-b { 
+b {
   font-weight: bold;
 }
 
@@ -929,8 +929,8 @@ body {
     z-index: 1;
     -webkit-transform: rotateX(-180deg);
     -ms-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);  
-    transform: rotateX(-180deg);  
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
     background-image: url(http://www.digitaltrends.com/wp-content/uploads/2011/03/ie-9-icon.jpg);
 }
 
@@ -943,7 +943,7 @@ body {
 }
 
 .panel:hover .back {
-    z-index: 2;   
+    z-index: 2;
     -webkit-transform: rotateX(0deg);
     -ms-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -954,8 +954,11 @@ body {
 .overlaycontainer {
 }
 
+.overlayimgcontainer {
+}
+
 .overlay {
-  /*position: absolute;*/
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -964,7 +967,6 @@ body {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
 }
 
 .overlaycontainer:hover .overlay {
@@ -972,8 +974,13 @@ body {
 
 }
 
-.overlaybluecontainer:hover .overlay {
+.overlayimgcontainer:hover .overlay {
   opacity: 1;
+  position: absolute;
+}
+
+.overlaybluecontainer:hover .overlay {
+  opacity: 0.8;
   position: absolute;
   background-color: #008CBA;
 
