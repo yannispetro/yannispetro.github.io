@@ -325,18 +325,20 @@
 
     <div class="row">
       <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 overlaybluecontainer">
-        <img src="img/proj/toronto.jpg" class="img-responsive center-block" width="416" height="240" style="box-shadow: 0px 0px 5px #111">
+        <img src="img/proj/NYC_map.jpg" class="img-responsive center-block" width="416" height="240" style="box-shadow: 0px 0px 5px #111">
             <div class="overlay">
-              <div class="overlaytext" style="color:white;font-size:14px;">Examples of Airbnb recommendations in Toronto
+              <img src="img/proj/UC_landing.JPG" class="img-responsive center-block" width="416" height="240" style="box-shadow: 0px 0px 5px #111">
               </div>
           </div>
       </div>
       <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 ">
-          <h4>Recommendation system for Airbnb listings using Yelp and Airbnb data</h4>
+          <h4>Neighborhood recommendation system for 80 large cities using Airbnb and Yelp data</h4>
         <p style="text-align:justify;">
-            First, a K-means clustering identifies areas with high density in restaurants, bars, coffee shops etc.
-            Second, a TF-IDF model is used to choose the clusters where the positive Yelp reviews and the Airbnb neighborhood descriptions correlate with user specified keywords.
-            Finally, the Airbnb listings that are located closer to the relevant clusters' centers are recommended.
+            Data science project that utilizes Natural Language Processing and Machine Learning techniques to recommend specific neighborhoods based on user specified keywords. 
+            It can be exploited as a standalone product or as a recommendation system for travel, local search and business rating websites.
+            First, a word embedding is learned using a fastText (Word2Vec) neural network model trained on a large dataset of Airbnb neighborhood descriptions and Yelp and Airbnb reviews.
+            Next, a K-means geographical clustering separates areas with high density in restaurants, bars, coffee shops and entities of general interest.
+            Finally, the neighborhoods that match the user specified keywords are identified by combining cosine similarity and inverse document frequency (IDF) measures. 
         </p>
           [<a target="_blank" href="https://github.com/yannispetro/AirbnbRecom">code</a>] [<a target="_blank" href="pdf/presentations/Presentation_AirbnbRecom.pdf">presentation</a>]
       </div>
